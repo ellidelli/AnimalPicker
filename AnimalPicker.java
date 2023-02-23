@@ -5,13 +5,16 @@ public class AnimalPicker {
         boolean valid = false;
         
         while (valid == false) {
-            System.out.println("\nWould you like to see a cat or a dog?");
+            System.out.println("\nWould you like to see a cat, dog or fish?");
             String choice = scan.nextLine();
             if (choice.equalsIgnoreCase ("cat")) {
                 System.out.println( "/\\__/\\\n( o.o )\n > ^ <");
                 valid = true;
             } else if (choice.equalsIgnoreCase("dog")) {
                 System.out.println("  __      _\no'')}____//\n`_/      )\n(_(_/-(_/");
+                valid = true;
+            } else if (choice.equalsIgnoreCase("fish")) {
+                System.out.println("               O  o\n                _\\_   o\n      >('>   \\\\/  o\\ .\n             //\\___=\n                ''");
                 valid = true;
             } else {
                 System.out.print("Invalid response\n");
