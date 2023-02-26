@@ -5,7 +5,7 @@ public class AnimalPicker {
         boolean valid = false;
         
         while (valid == false) {
-            System.out.println("\nWould you like to see a cat, dog, fish, or frog?");
+            System.out.println("\nWould you like to see a cat, dog, fish, frog, or duck?");
             String choice = scan.nextLine();
             if (choice.equalsIgnoreCase ("cat")) {
                 System.out.println( "/\\__/\\\n( o.o )\n > ^ <");
@@ -19,7 +19,11 @@ public class AnimalPicker {
             } else if (choice.equalsIgnoreCase("frog")) {
                 System.out.println("            _   _\n           (.)_(.)\n        _ (   _   ) _\n       / \\/`-----\'\\/ \\\njgs   )_/ /|\\   /|\\ \\_(");
                 valid = true;
-            } else {
+            } else if (choice.equalsIgnoreCase("duck")) {
+                System.out.println("    __\n___( o)>\n\\ <_. )\n `---\'  ");
+                valid = true;
+            } 
+            else {
                 System.out.print("Invalid response\n");
             }
         }
